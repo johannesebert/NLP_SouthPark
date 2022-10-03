@@ -7,3 +7,13 @@ An individual NLP project, with the focus on NLP. It is based on the South Park 
 <p align="center">
 <img src="images/southpark.jpeg" width="50%" height="50%">
 </p>
+
+##Contents
+The whole project is saved within one jupyter notebook and includes the following sections: 
+-	Import section
+-	Data Wrangling
+-	EDA
+-	Modelling 
+-	Results
+
+
