@@ -81,7 +81,7 @@ As a result, I will include two new columns:
 1. polarity: This is a float within the range [-1.0, 1.0] where -1.0 is a negative polarity and 1.0 is positive.
 2.	Subjectivity: Subjectivity(objectivity) identification task reports a float within the range [0.0, 1.0] where 0.0 is a very objective sentence and 1.0 is very subjective.
 
-|Character|Mean Polarity|Mean Subjectivity|
+|**Character**|**Mean Polarity**|**Mean Subjectivity**|
 |:--      |    :-:      |     :-:         |
 |Cartman  |0.032168     |0.297806         |
 |Kenny    |0.005148     |0.199429         |
