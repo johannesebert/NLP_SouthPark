@@ -81,12 +81,14 @@ As a result, I will include two new columns:
 1. polarity: This is a float within the range [-1.0, 1.0] where -1.0 is a negative polarity and 1.0 is positive.
 2.	Subjectivity: Subjectivity(objectivity) identification task reports a float within the range [0.0, 1.0] where 0.0 is a very objective sentence and 1.0 is very subjective.
 
-<p align="center">
-<img src="images/pol_sub.png" width="75%" height="75%">
-</p>
+|Character|Mean Polarity|Mean Subjectivity|
+|---------|-------------|-----------------|
+|Cartman  |:0.032168:   |:0.297806:       |
+|Kenny    |:0.005148:   |:0.199429:       |
+|Kyle     |:0.016541:   |:0.328798:       |
+|Stan     |:0.025815:   |:0.225829:       |
 
-
-It seems that Kenny has the lowest mean subjectivity which means he is the most objective of the main characters. The polarity shows that all of them are slightly more positive and Kenny has the lowest mean polarity. But we need to keep in mind that Kenny has not many lines and words during the whole show.
+Kenny has the lowest mean subjectivity which means he is the most objective of the main characters. The polarity shows that all of them are slightly more positive and Kenny has the lowest mean polarity. But we need to keep in mind that Kenny has not many lines and words during the whole show.
 
 
 
