@@ -46,14 +46,43 @@ To clean data and make is usable for NLP models I adjusted the following:
 -	Subjectivity - Extracted using the "texblob" package, sentiment analyzer, subjectivity measures how opinionated a text is.
 -	Polarity - Extracted as above, polarity measures the positivity of a given text.
 
-## Target Variable
-The target variable was the classification for the main characters: 
--	Cartman:  0
--	Kyle:     1
--	Stan:     2
--	Kenny:    3
+## Word Clouds
+To get a feeling for the main words used I created some word clouds. Below includes the whole script after the above cleaning of the data.
 
 
+<p align="center">
+<img src="images/wordcloudtotal.jpeg" width="50%" height="50%">
+</p>
+
+Additional I created some word clouds for the 4 main character, as an example the one for Cartman below:
+<p align="center">
+<img src="images/wordcloudcartman.jpeg" width="50%" height="50%">
+</p>
+
+## Eploratory Data Analysis 
+
+### Amounf of lines per character
+<p align="center">
+<img src="images/lines_per_character.png" width="50%" height="50%">
+</p>
+As expected, the first persons with the most lines are also three of the main characters: Cartman, Stan and Kyle. The fourth main character Kenny can only be found on the 8th place. For people who know the tv-show this is not surprising as Kenny is not saying much all the time. I will be interesting to see if the few lines from Kenny will be enough for the models to identify lines from Kenny.
+
+### Words per character
+Now that we checked the number of lines per character i also want to have a closer look at the total words of the character. We can see above that Cartman has the most lines within the script, but it could be that he is saying less words than Stan if he has always very short lines.
+<p align="center">
+<img src="images/words_per_character.png" width="50%" height="50%">
+</p>
+Cartman, Stan and Kyle are also having the most words. Also, we can see that Cartman has by far the most words within the show. Within the lines overview Kenny was listed on position 8th. Within the overview of the words, he has fallen back to position 18. This will make it probably even harder for the models.
+
+### Sentiment Analysis 
+
+Python sentiment analysis is a methodology for analyzing a piece of text to discover the sentiment hidden within it.  Sentiment analysis allows you to examine the feelings expressed in a piece of text. I want to see if it can also identify if specific characters are more negative than others. 
+As a result, I will include two new columns:
+1. polarity: This is a float within the range [-1.0, 1.0] where -1.0 is a negative polarity and 1.0 is positive.
+2.	Subjectivity: Subjectivity(objectivity) identification task reports a float within the range [0.0, 1.0] where 0.0 is a very objective sentence and 1.0 is very subjective.
+
+
+It seems that Kenny has the lowest mean subjectivity which means he is the most objective of the main characters. The polarity shows that all of them are slightly more positive and Kenny has the lowest mean polarity. But we need to keep in mind that Kenny has not many lines and words during the whole show.
 
 
 
