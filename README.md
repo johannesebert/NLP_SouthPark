@@ -51,26 +51,26 @@ To get a feeling for the main words used I created some word clouds. Below inclu
 
 
 <p align="center">
-<img src="images/wordcloudtotal.png" width="50%" height="50%">
+<img src="images/wordcloudtotal.png" width="75%" height="75%">
 </p>
 
 Additional I created some word clouds for the 4 main character, as an example the one for Cartman below:
 <p align="center">
-<img src="images/wordcloudcartman.png" width="50%" height="50%">
+<img src="images/wordcloudcartman.png" width="75%" height="75%">
 </p>
 
 ## Eploratory Data Analysis 
 
 ### Amounf of lines per character
 <p align="center">
-<img src="images/lines_per_character.png" width="50%" height="50%">
+<img src="images/lines_per_character.png" width="75%" height="75%">
 </p>
 As expected, the first persons with the most lines are also three of the main characters: Cartman, Stan and Kyle. The fourth main character Kenny can only be found on the 8th place. For people who know the tv-show this is not surprising as Kenny is not saying much all the time. I will be interesting to see if the few lines from Kenny will be enough for the models to identify lines from Kenny.
 
 ### Words per character
 Now that we checked the number of lines per character i also want to have a closer look at the total words of the character. We can see above that Cartman has the most lines within the script, but it could be that he is saying less words than Stan if he has always very short lines.
 <p align="center">
-<img src="images/words_per_character.png" width="50%" height="50%">
+<img src="images/words_per_character.png" width="75%" height="75%">
 </p>
 Cartman, Stan and Kyle are also having the most words. Also, we can see that Cartman has by far the most words within the show. Within the lines overview Kenny was listed on position 8th. Within the overview of the words, he has fallen back to position 18. This will make it probably even harder for the models.
 
@@ -82,7 +82,7 @@ As a result, I will include two new columns:
 2.	Subjectivity: Subjectivity(objectivity) identification task reports a float within the range [0.0, 1.0] where 0.0 is a very objective sentence and 1.0 is very subjective.
 
 <p align="center">
-<img src="images/pol_sub.png" width="50%" height="50%">
+<img src="images/pol_sub.png" width="75%" height="75%">
 </p>
 
 
