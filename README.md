@@ -51,12 +51,12 @@ To get a feeling for the main words used I created some word clouds. Below inclu
 
 
 <p align="center">
-<img src="images/wordcloudtotal.jpeg" width="50%" height="50%">
+<img src="images/wordcloudtotal.png" width="50%" height="50%">
 </p>
 
 Additional I created some word clouds for the 4 main character, as an example the one for Cartman below:
 <p align="center">
-<img src="images/wordcloudcartman.jpeg" width="50%" height="50%">
+<img src="images/wordcloudcartman.png" width="50%" height="50%">
 </p>
 
 ## Eploratory Data Analysis 
@@ -80,6 +80,10 @@ Python sentiment analysis is a methodology for analyzing a piece of text to disc
 As a result, I will include two new columns:
 1. polarity: This is a float within the range [-1.0, 1.0] where -1.0 is a negative polarity and 1.0 is positive.
 2.	Subjectivity: Subjectivity(objectivity) identification task reports a float within the range [0.0, 1.0] where 0.0 is a very objective sentence and 1.0 is very subjective.
+
+<p align="center">
+<img src="images/pol_sub.png" width="50%" height="50%">
+</p>
 
 
 It seems that Kenny has the lowest mean subjectivity which means he is the most objective of the main characters. The polarity shows that all of them are slightly more positive and Kenny has the lowest mean polarity. But we need to keep in mind that Kenny has not many lines and words during the whole show.
