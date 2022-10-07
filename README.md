@@ -90,5 +90,5 @@ As a result, I will include two new columns:
 
 Kenny has the lowest mean subjectivity which means he is the most objective of the main characters. The polarity shows that all of them are slightly more positive and Kenny has the lowest mean polarity. But we need to keep in mind that Kenny has not many lines and words during the whole show.
 
-
+## Modeling
 
