@@ -91,4 +91,35 @@ As a result, I will include two new columns:
 Kenny has the lowest mean subjectivity which means he is the most objective of the main characters. The polarity shows that all of them are slightly more positive and Kenny has the lowest mean polarity. But we need to keep in mind that Kenny has not many lines and words during the whole show.
 
 ## Modeling
+### Target Variables 
+The target variables will be 4 classes for the main characters: 
+-	Cartman:  0
+-	Kyle:     1
+-	Stan:     2
+-	Kenny:    3
+
+### Baseline
+To evaluate the precision of the models I first will have a look at the baseline of the test data. As there is a class imbalance within the data:
+By pure guessing the chances would look as follows:
+- Cartman:	0.395515
+- Stan:		  0.292691
+- Kyle:		  0.276528
+- Kenny:		0.035266
+
+### Count Vectorizer:
+
+The text data needs to be understandable by a machine. I will use the count vectorizer to convert text to numerical data. Within this process the text will be converted into a sparse matrix.
+One of the key parameters for the count vectorizer is the "ngram_range", which takes as input a tuple "(min_n, max_n)". The default is "(1, 1)". This parameter describes the lower and upper boundary of the range of n-values for different word n-grams or char n-grams to be extracted. All values of n such such that min_n <= n <= max_n will be used. For example, an ngram_range of (1, 1) means only unigrams, (1, 2) means unigrams and bigrams, and (2, 2) means only bigrams.
+For my models I would like to include unigrams and bigrams so the parameter should be (1,2). Unfortunately, this calculation is bringing my machine at home to its limits. After several unsuccessful attempts I decide to proceed with the following approach:
+1.	Create a subset of the data which can be handled by my machine
+2.	Use the subset on my machine to create and test the code for the modeling. The modeling coding includes the following steps:
+o	Count vectorizer
+o	Feature engineering to include also the polarity, subjectivity and the length of the line
+o	Create a train test split to evaluate the models
+o	Standard scale the features
+o	Running several models with gridseacrh to identify the best models.
+o	Saving the results and parameters of the best models in a dataframe 
+3.	After I am sure that everything is working, I will rent a machine from aws to perform the modeling process on the complete dataset and present the results.
+
+
 
