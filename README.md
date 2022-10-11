@@ -113,12 +113,12 @@ One of the key parameters for the count vectorizer is the "ngram_range", which t
 For my models I would like to include unigrams and bigrams so the parameter should be (1,2). Unfortunately, this calculation is bringing my machine at home to its limits. After several unsuccessful attempts I decide to proceed with the following approach:
 1.	Create a subset of the data which can be handled by my machine
 2.	Use the subset on my machine to create and test the code for the modeling. The modeling coding includes the following steps:
-o	Count vectorizer
-o	Feature engineering to include also the polarity, subjectivity and the length of the line
-o	Create a train test split to evaluate the models
-o	Standard scale the features
-o	Running several models with gridseacrh to identify the best models.
-o	Saving the results and parameters of the best models in a dataframe 
+  - Count vectorizer to create unigrams and bigrams
+  - Feature engineering to include also the polarity, subjectivity and the length of the line
+  - Create a train test split to evaluate the models
+  - Standard scale the features
+  - Running several models with gridseacrh to identify the best models.
+  - Saving the results and parameters of the best models in a dataframe 
 3.	After I am sure that everything is working, I will rent a machine from aws to perform the modeling process on the complete dataset and present the results.
 
 
